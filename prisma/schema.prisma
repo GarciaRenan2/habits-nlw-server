@@ -21,6 +21,7 @@ model Habit {
   @@map("habits")
 }
 
+// Recorrencia do habit durante a semana
 model HabitWeekDays {
   id       String @id @default(uuid())
   habit_id String

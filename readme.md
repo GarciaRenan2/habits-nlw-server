@@ -18,6 +18,10 @@
     - @prisma/client
     - npx prisma init datasource-provider SQLite
 
+
+# alterar no package.json o script "start"
+    - "tsx watch src/server.ts"
+
 # Criar as tabelas no schema.prisma
 ## Executar o migrate
     - npx prima migrate dev
@@ -27,3 +31,10 @@
 
 ## Importar o client do prisma e criar const
     - const prisma = new PrismaClient()
+
+## Seed - popular o banco ao iniciar
+    - incluir no package.json o arquivo (verificar documentação prisma)
+
+# instalra zod
+ - npm install zod
+    - faz a validação dos dados da requisição
